@@ -1,0 +1,91 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .navbar img {
+    height: 80px;
+    width: 80px;
+  }
+  .navbar a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+  }
+  
+  .navbar a:hover::after {
+    background-color: #333;
+  }
+  
+  /* Welcome Image and Text */
+  .welcome-section {
+    height: 100vh;
+    background-image: url(background_brain.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+  }
+  /* About Section */
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #eee;
+  }
+  /* Projects Section */
+  .projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #ddd;
+  }
+  /* Who We Are Section */
+  .who-we-are-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #ccc;
+  }
+  /* Email List Signup Section */
+  .email-list-signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #bbb;
+  }
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #aaa;
+  }

@@ -1,0 +1,225 @@
+body {
+  background: linear-gradient(to bottom, #0b031a, #290155);
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #FCEFE0;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .navbar img {
+    height: 80px;
+    width: 80px;
+  }
+  .navbar a {
+    color: #290155;
+    text-decoration: none;
+    margin-right: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+  }
+  
+  .navbar a:hover::after {
+    background-color: #333;
+  }
+  
+  /* Welcome Image and Text */
+  .welcome-section {
+    height: 100vh;
+    background-image: url(background_brain.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 1rem;
+  }
+.welcome-section h1{
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+}
+  /* About Section */
+ .about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 70%;
+  margin: 0 auto; 
+}
+
+.about-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.about-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+  /* Projects Section */
+  .projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .projects-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.projects-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+  /* Who We Are Section */
+  .who-we-are-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .who-we-are-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.who-we-are-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+  /* Email List Signup Section */
+  .email-list-signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .email-list-signup-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.email-list-signup-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+  /* Contact Section */
+  .contact-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.contact-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  color: #3d0c46;
+}
+
+.contact-section .btn:hover {
+  background-color: #6200EE;
+  box-shadow: 4px 4px 6px #000000;
+}
+
+.contact-section .btn .gmail {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.contact-section.btn  .twitter {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.contact-section .btn .instagram {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  border-top: 1px solid white;
+}
+
+.copyright {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}

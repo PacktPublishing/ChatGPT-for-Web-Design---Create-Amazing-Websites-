@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #000000, #3d0c72);
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #0b031a, #2a015500);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+.navbar img {
+  height: 80px;
+  width: 80px;
+}
+.navbar a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in;
+}
+
+.navbar a:hover::after {
+  background-color: #ffffff;
+}
+
+
+
+/* Welcome Image and Text */
+.welcome-section {
+  height: 100vh;
+  background-image: url(brain_bg_square.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 1rem;
+}
+.welcome-section h1{
+font-family: "Arial Black", sans-serif;
+font-size: 48px;
+color: white;
+}
+.generated-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  font-family: "Georgia, serif";
+  font-size: 48px;
+  color: white;
+}
+
+.generated-text a{
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.arrow-icon {
+  font-size: 40px;
+  cursor:pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow-icon2 {
+  font-size: 20px;
+  cursor:pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow-icon:hover {
+  transform: translateY(-5px);
+}
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  padding: 15%;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.about-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align:left;
+}
+
+/* Projects Section */
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.projects-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.projects-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  
+  width: 90%;
+  text-align:left;
+}
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.slider-frame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider-content {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+  .slider-content h2{
+  font-size: 38px;
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+  .slider-content p{
+  padding: 20px;
+  text-align: left;
+}
+.arrow-left, .arrow-right {
+  font-size: 40px;
+  color: white;
+  padding: 40px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.who-we-are-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.who-we-are-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align:left;
+}
+
+/* Email List Signup Section */
+.email-list-signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.email-list-signup-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+.email-list-signup-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align:left;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+input[type="email"] {
+  width: 50%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+button[type="submit"] {
+  width: 30%;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #700367;
+  color: white;
+  font-size: 18px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff00dd;
+}
+/* Contact buttons */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-section .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  color: #3d0c46;
+}
+
+.contact-section .btn:hover {
+  background-color: #6200EE;
+  box-shadow: 1px #ffffff;
+  color: #ffffff;
+}
+
+.contact-section .btn gmail {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.contact-section .btn twitter {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.contact-section .btn instagram {
+  background-color: #9c27b0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+
+.contact-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  border-top: 1px solid white;
+}
+
+.copyright {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
